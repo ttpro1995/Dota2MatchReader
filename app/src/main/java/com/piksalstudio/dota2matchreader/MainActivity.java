@@ -108,7 +108,9 @@ public class MainActivity extends ActionBarActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-            Log.v ("Match Json",Match.match_json);//log json
+            //Log.v ("Match Json",Match.match_json);//log json
+            dota2JsonParse parser = new dota2JsonParse(Match.match_json);
+            parser.ParseMatchJson();
         }
     }
 
