@@ -1,4 +1,4 @@
-package com.piksalstudio.dota2matchreader;
+package com.hahattpro.dota2matchreader;
 
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -8,8 +8,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.piksalstudio.dota2matchreader.constant.Dota2API;
-import com.piksalstudio.dota2matchreader.constant.Match;
+import com.hahattpro.dota2matchreader.constant.Dota2API;
+import com.hahattpro.dota2matchreader.constant.Match;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,7 +17,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
-import java.net.URI;
 import java.net.URL;
 
 
@@ -28,7 +27,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new GetMatchInfoJson().execute("1468017320");
+        new GetMatchInfoJson().execute("627230361");
     }
 
 
@@ -111,6 +110,7 @@ public class MainActivity extends ActionBarActivity {
             //Log.v ("Match Json",Match.match_json);//log json
             dota2JsonParse parser = new dota2JsonParse(Match.match_json);
             parser.ParseMatchJson();
+            parser.LogMatch();
         }
     }
 

@@ -1,4 +1,4 @@
-package com.piksalstudio.dota2matchreader.constant;
+package com.hahattpro.dota2matchreader.constant;
 
 /**
  * Created by haha on 5/16/2015.

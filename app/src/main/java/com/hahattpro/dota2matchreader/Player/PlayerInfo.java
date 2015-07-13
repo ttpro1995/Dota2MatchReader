@@ -1,10 +1,10 @@
-package com.piksalstudio.dota2matchreader.Player;
+package com.hahattpro.dota2matchreader.Player;
 
 /**
  * Created by haha on 5/16/2015.
  */
 public class PlayerInfo {
-    public int account_id;
+    public String account_id;
     public int player_slot;
     public int hero_id;
     public int item_0;

@@ -1,4 +1,4 @@
-package com.piksalstudio.dota2matchreader;
+package com.hahattpro.dota2matchreader;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
