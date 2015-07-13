@@ -42,7 +42,18 @@ public class dota2JsonParse {
                 tmp.hero_id=player.getInt("hero_id");
                 tmp.kills=player.getInt("kills");
                 tmp.deaths=player.getInt("deaths");
-
+                tmp.assists = player.getInt("assists");
+                tmp.leaver_status = player.getInt("leaver_status");
+                tmp.gold = player.getInt("gold");
+                tmp.last_hits = player.getInt("last_hits");
+                tmp.denies = player.getInt("denies");
+                tmp.gold_per_min = player.getInt("gold_per_min");
+                tmp.xp_per_min = player.getInt("xp_per_min");
+                tmp.gold_spent = player.getInt("gold_spent");
+                tmp.hero_damage = player.getInt("hero_damage");
+                tmp.tower_damage = player.getInt("tower_damage");
+                tmp.hero_healing = player.getInt("hero_healing");
+                tmp.level = player.getInt("level");
             }
 
         }
@@ -63,6 +74,8 @@ public class dota2JsonParse {
         }
     }
 
-
-
+    public PlayerInfo[] getPlayerInfo()
+    {
+        return playerInfo;
+    }
 }
