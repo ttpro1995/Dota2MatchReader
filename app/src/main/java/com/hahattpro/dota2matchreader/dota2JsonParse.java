@@ -54,8 +54,13 @@ public class dota2JsonParse {
                 tmp.tower_damage = player.getInt("tower_damage");
                 tmp.hero_healing = player.getInt("hero_healing");
                 tmp.level = player.getInt("level");
+                tmp.item_0 = player.getInt("item_0");
+                tmp.item_1 = player.getInt("item_1");
+                tmp.item_2 = player.getInt("item_2");
+                tmp.item_3 = player.getInt("item_3");
+                tmp.item_4 = player.getInt("item_4");
+                tmp.item_5 = player.getInt("item_5");
             }
-
         }
         catch (JSONException e)
         {
@@ -67,10 +72,12 @@ public class dota2JsonParse {
         for (int i = 0 ;i <10;i++)
         {
             PlayerInfo tmp = playerInfo[i];
-            Log.i(TAG+"player "+i,"account_id "+tmp.account_id);
-            Log.i(TAG+"player "+i,"hero_id"+tmp.hero_id);
-            Log.i(TAG+"player "+i,"kill"+tmp.kills);
-            Log.i(TAG+"player "+i,"death"+tmp.deaths);
+            Log.i(TAG+" player "+i,"account_id "+tmp.account_id);
+            Log.i(TAG+" player "+i,"hero_id"+tmp.hero_id);
+            Log.i(TAG+" player "+i,"kill"+tmp.kills);
+            Log.i(TAG+" player "+i,"death"+tmp.deaths);
+            Log.i(TAG+" player "+i,"gold_per_min "+tmp.gold_per_min);
+            Log.i(TAG+" player "+i,"level  "+tmp.level);
         }
     }
 
